@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6609A419-3028-4B28-B5CA-3C69F3FCCB90}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrepBuildings</RootNamespace>
+    <AssemblyName>GrepBuildings</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImageZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageZoom.Designer.cs">
+      <DependentUpon>ImageZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GrepBuildings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GrepBuildings.Designer.cs">
+      <DependentUpon>GrepBuildings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageZoom.resx">
+      <DependentUpon>ImageZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrepBuildings.resx">
+      <DependentUpon>GrepBuildings.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\academyx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\barracksx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\docksx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\farmx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hidex20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ironerx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\libraryx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lighthousex20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lumberx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\mainx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\marketx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\oraclex20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\statuex20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stonerx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\storagex20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\templex20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\theaterx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\thermalx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\towerx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\trade_officex20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\wallx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\addx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\emptyx20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\favor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\iron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\academy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\barracks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\docks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\farm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ironer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stoner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\storage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\temple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lighthouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\oracle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\statue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\theater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\thermal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\tower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\trade_office.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

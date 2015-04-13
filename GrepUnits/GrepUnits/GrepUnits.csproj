@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94B01079-AA08-4DA3-B962-510242852082}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrepUnits</RootNamespace>
+    <AssemblyName>GrepUnits</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GrepUnits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GrepUnits.Designer.cs">
+      <DependentUpon>GrepUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GrepUnits.resx">
+      <DependentUpon>GrepUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\archerx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\attack_shipx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\big_transporterx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\biremex40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\catapultx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\centaurx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\chariotx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\colonize_shipx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\demolition_shipx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\harpyx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hoplitex40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\manticorex40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\medusax40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\minotaurx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pegasusx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\riderx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sea_monsterx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\slingerx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\small_transporterx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\swordx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\triremex40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zyklopx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\population.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cerberusx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\furyx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\poseidon_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\calydonian_boarx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\griffinx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\godsentx40.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

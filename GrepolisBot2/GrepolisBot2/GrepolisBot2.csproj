@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{111002A6-55F2-4CF5-AE03-731D3D68B45C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrepolisBot2</RootNamespace>
+    <AssemblyName>GrepolisBot2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GrepBuildings">
+      <HintPath>..\..\GrepBuildings\GrepBuildings\bin\Release\GrepBuildings.dll</HintPath>
+    </Reference>
+    <Reference Include="GrepCulture">
+      <HintPath>..\..\GrepCulture\GrepCulture\bin\Release\GrepCulture.dll</HintPath>
+    </Reference>
+    <Reference Include="GrepFarmers">
+      <HintPath>..\..\GrepFarmers\GrepFarmers\bin\Release\GrepFarmers.dll</HintPath>
+    </Reference>
+    <Reference Include="GrepSchedulerSmall">
+      <HintPath>..\..\GrepSchedulerSmall\GrepSchedulerSmall\bin\Release\GrepSchedulerSmall.dll</HintPath>
+    </Reference>
+    <Reference Include="GrepUnits">
+      <HintPath>..\..\GrepUnits\GrepUnits\bin\Release\GrepUnits.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\Microsoft.mshtml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArmyUnit.cs" />
+    <Compile Include="Building.cs" />
+    <Compile Include="CaptchaHandler.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="CookieHelpers.cs" />
+    <Compile Include="CulturalEvent.cs" />
+    <Compile Include="CustomArgs.cs" />
+    <Compile Include="Farmer.cs" />
+    <Compile Include="GrepolisBot2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrepolisBot2.Designer.cs">
+      <DependentUpon>GrepolisBot2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group.cs" />
+    <Compile Include="HttpHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IOHandler.cs" />
+    <Compile Include="jdTimer.cs" />
+    <Compile Include="MailClient.cs" />
+    <Compile Include="Movement.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueTemplate.cs" />
+    <Compile Include="Research.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Technology.cs" />
+    <Compile Include="Town.cs" />
+    <Compile Include="Trade.cs" />
+    <EmbeddedResource Include="GrepolisBot2.resx">
+      <DependentUpon>GrepolisBot2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\reload_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\athena_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\favor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\god_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hades_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hera_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\iron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\population.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\poseidon_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zeus_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\god_minix40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\militia_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\power_call_of_the_oceanx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\power_fertility_improvementx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\resources.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\power_call_of_the_ocean_offx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\power_fertility_improvement_offx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\power_town_protection_offx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\power_town_protectionx40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\artemis_mini.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 3.3</PostBuildEvent>
+  </PropertyGroup>
+</Project>
