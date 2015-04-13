@@ -1,5 +1,5 @@
 #### Notice
-The is the source code from the Grepolis 2 Bot project on http://bots.uthar.nl.
+The is the source code from the [Grepolis 2](http://en.grepolis.com/) Bot project on http://bots.uthar.nl.
 It started as a small hobby project back in 2011, and has currently grown in a full featured bot. Now that the development has come to an end I decided to make the source code public. Feel free to fork this project to continue with your own version of the bot.
 
 # License
@@ -10,12 +10,12 @@ Bot for the browsergame [Grepolis 2](http://en.grepolis.com/) written in C#. The
 http://bots.uthar.nl/155/grepolis-2-bot-guide
 
 ## Directories
-GrepolisBot2: Main project.
-GrepBuildings: Custom .NET control used by Grepolis2Bot.
-GrepCulture: Custom .NET control used by Grepolis2Bot.
-GrepFarmers: Custom .NET control used by Grepolis2Bot.
-GrepSchedulerSmall: Custom .NET control used by Grepolis2Bot.
-GrepUnits: Custom .NET control used by Grepolis2Bot.
+GrepolisBot2: Main project.  
+GrepBuildings: Custom .NET control used by Grepolis2Bot.  
+GrepCulture: Custom .NET control used by Grepolis2Bot.  
+GrepFarmers: Custom .NET control used by Grepolis2Bot.  
+GrepSchedulerSmall: Custom .NET control used by Grepolis2Bot.  
+GrepUnits: Custom .NET control used by Grepolis2Bot.  
 
 ## Development
 Most of the important methods are commented, however if you are missing some comments or want me to extend some of them, let me know. In the next section you'll find sequence diagrams to clarify some processes.
