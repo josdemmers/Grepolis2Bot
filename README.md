@@ -9,8 +9,13 @@ Grepolis2Bot is licensed under [GPL v2](https://github.com/josdemmers/Grepolis2B
 Bot for the browsergame [Grepolis 2](http://en.grepolis.com/) written in C#. The user guide explaining all the features of the bot can be found here:
 http://bots.uthar.nl/155/grepolis-2-bot-guide
 
-## Files
-
+## Directories
+GrepolisBot2: Main project.
+GrepBuildings: Custom .NET control used by Grepolis2Bot.
+GrepCulture: Custom .NET control used by Grepolis2Bot.
+GrepFarmers: Custom .NET control used by Grepolis2Bot.
+GrepSchedulerSmall: Custom .NET control used by Grepolis2Bot.
+GrepUnits: Custom .NET control used by Grepolis2Bot.
 
 ## Development
 Most of the important methods are commented, however if you are missing some comments or want me to extend some of them, let me know. In the next section you'll find sequence diagrams to clarify some processes.
