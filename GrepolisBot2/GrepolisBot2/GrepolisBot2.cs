@@ -539,7 +539,7 @@ namespace GrepolisBot2
                 {
                     CookieHelpers.ClearCookie();
                     m_Controller.State = "loginp1";
-                    webBrowserGrepo.Navigate("http://" + l_Settings.GenMainServer);
+                    webBrowserGrepo.Navigate("https://" + l_Settings.GenMainServer);
                 }
             }
             catch(Exception e)
@@ -603,7 +603,7 @@ namespace GrepolisBot2
                     //2.10 and earlier --> http://zz.grepolis.com/start?action=login
                     //2.11 and later --> http://zz.grepolis.com/start?action=login_to_game_world
 
-                    string l_Url = "http://" + l_Settings.GenMainServer + "/start?action=login_to_game_world";
+                    string l_Url = "https://" + l_Settings.GenMainServer + "/start?action=login_to_game_world";
                     Uri l_Uri = new Uri(l_Url);
                     String l_ServerNr = "";
                     l_ServerNr = l_Settings.GenServer.Substring(0, l_Settings.GenServer.IndexOf(".", 0));
